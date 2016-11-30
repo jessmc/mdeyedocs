@@ -1,0 +1,825 @@
+html {
+  width: 90%;
+  height: 100%;
+  margin-left: 60px;
+  margin-right: 10px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #AD4F2B;
+  font-family: 'Chivo', sans-serif;
+  font-size: 12pt;
+  font-weight: 300;
+  color: #000000;
+}
+
+#page-wrap {
+  width: auto;
+  margin: auto;
+}
+
+
+h1 {
+  font-family: 'Bitter', serif;
+  text-align: center;
+}
+
+#body {
+  float: center;
+  height: auto;
+  background-color: #FFF;
+  padding: 4em ;
+}
+
+#body h3 {
+  text-align: center;
+  font-size: 22px;
+  font-family: 'Chivo', sans-serif;
+}
+
+#body p {
+  font-family: 'Chivo', sans-serif; 
+}
+
+
+/** LOGO IMAGE */
+
+.header img {
+  float: left;
+  width: 100%;
+
+}
+
+/** BIG EYEBALL PICTURE */
+
+.row {  
+  background-color: #683115;
+  color: #FFF;
+  font-family: 'Bitter', sans-serif;
+  text-decoration: none;
+  font-size: 16pt;
+  font-weight: 500;
+  text-align: center;
+}
+
+
+.row img {  
+  overflow:hidden;
+  float: left;
+  width: 100%;
+
+}
+
+.rowbox {
+  display: inline-block;
+    height: auto;
+    width: auto;
+    overflow: hidden;
+}
+
+
+.row a {
+  text-decoration: none;
+  font-family: 'Bitter', sans-serif;
+  font-size: 16pt;
+  font-weight: 500;
+  color: #AD4F2B;
+}
+
+/** MENU BAR */
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:700);
+#menu {
+  width: 100%;
+  height: 40px;
+}
+
+ul#nav {
+  float: left;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background: #683115 repeat-x;
+ 
+}
+
+ul#nav li {
+  display: block;
+}
+
+ul#nav li a {
+  float: left;
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 40px;
+  color: #fff;
+  text-decoration: none;
+  margin: 0;
+  padding: 0 20px;
+  background: #683115 repeat-x;
+  
+}
+
+/* APPLIES THE ACTIVE STATE */
+ul#nav .active-has-sub a, ul#nav li:hover > a  {
+  color: #fff;
+  text-decoration: none;
+  background: #AD4F2B;
+
+}
+
+
+/* THE SUBMENU LIST HIDDEN BY DEFAULT */
+ul#nav  ul {
+  display: none;
+  position:absolute; top:100%; left:0;
+}
+
+
+
+/* ALIGNED THE SUBMENU CORRECTLY */
+#menu > ul > li {
+  display: block;
+  position: relative;
+  float: left;
+  margin: 0;
+  padding: 0;
+
+}
+
+
+
+/* WHEN THE FIRST LEVEL MENU ITEM IS HOVERED, THE CHILD MENU APPEARS */
+ul#nav li:hover > ul {
+  position: absolute;
+  display: block;
+  text-transform: uppercase;
+  width: 200px;
+  background: #683115 repeat-x; 
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  float: left;
+
+}
+
+ul#nav li:hover > ul li a {
+  background: #683115;
+  border-bottom: 1px dotted #AD4F2B;
+  font-size: 16px;
+  line-height: 100%;
+  margin-left: -2em;
+  padding: 10px 0px;
+  color: #ffffff;
+
+}
+
+
+ul#nav li:hover > ul li a:hover {
+  color: #AD4F2B;
+  text-decoration: none;
+  text-shadow: none;
+}
+
+#menu ul ul li.last > a,
+#menu ul ul li:last-child > a,
+#menu ul ul ul li.last > a,
+#menu ul ul ul li:last-child > a,
+#menu .has-sub ul li:last-child > a,
+#menu .has-sub ul li.last > a {
+  border-bottom: 0;
+}
+
+@media screen and (max-width: 900px) {
+  #menu ul li {
+    float: none;
+    display: block;
+  }
+  #menu ul li a {
+    width: 100%;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-bottom: 1px solid #AD4F2B;
+
+  }
+  #menu ul li.last > a,
+  #menu ul li:last-child > a {
+    border: 0;
+  }
+  #menu ul li a:after {
+    display: none;
+
+  }
+  #menu ul li a:before {
+    display: none;
+  }
+  #menu .has-sub li {
+    display: none;
+  }
+
+}
+
+
+/** FOOTER */
+
+#footer {
+  width: 80%;
+  margin: 0px auto; /* centers it */
+  padding: 0;
+  min-width: 400px;
+}
+
+.copyright {
+  text-align: center;
+  margin: auto;
+}
+
+
+/* HOME PAGE FOOTER */
+
+
+
+#index_locations h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.4em;
+  color: #FFF;
+  text-decoration: none;
+  letter-spacing: 1px;
+  display: block;
+  font-weight: 300;
+  padding-top: 20px;
+ 
+}
+
+#index_locations.row1 {
+  display: inline-block;
+    margin: 0px;
+    overflow: hidden;
+      text-align: center;
+         
+}
+
+#index_locations .row2 {
+  display: inline-block;
+    margin: 0px;
+    overflow: hidden;
+      text-align: center;
+         
+}
+
+#indexlocations .row3 {
+  display: inline-block;
+    margin: 0px;
+    overflow: hidden;
+      text-align: center;
+         
+
+}
+#index_locations h3 {
+  text-transform: uppercase;
+  font-size: 0.9em;
+    text-align: center;
+       
+}
+
+
+#index_locations a:link {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+#index_locations a:visited {
+  text-decoration: none;
+  color: #000000;
+}
+
+#index_locations a:hover {
+  color: #683115;
+  text-decoration: none;
+}
+
+#index_locations a:active {
+  color: #000000;
+  text-decoration: none;
+}
+
+#index_locations h3 {
+  text-transform: uppercase;
+  font-size: 0.9em;
+    text-align: center;
+       
+}
+
+#index_locations p {
+  margin: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+    font-size: 11pt;
+    font-weight: 300;
+    color: #FFF;
+      text-align: center;
+         
+
+}
+
+/** right footer */
+
+
+#footer h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.4em;
+  color: #FFF;
+  text-decoration: none;
+  letter-spacing: 1px;
+  display: block;
+  font-weight: 300;
+     
+}
+
+.row1 {
+  display: inline-block;
+    height: 200px;
+    width: 220px;
+    margin: 0px;
+    overflow: hidden;
+       
+}
+
+.row2 {
+  display: inline-block;
+    height: 200px;
+    width: 220px;
+    margin: 0px;
+    overflow: hidden;
+       
+}
+
+.row3 {
+  display: inline-block;
+    height: 200px;
+    width: 220px;
+    margin: 0px;
+    overflow: hidden;
+       
+
+}
+
+#footer h3 {
+  text-transform: uppercase;
+  font-size: 0.9em;
+
+}
+
+
+#footer a:link {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+#footer a:visited {
+  text-decoration: none;
+  color: #000000;
+}
+
+#footer a:hover {
+  color: #683115;
+  text-decoration: none;
+}
+
+#footer a:active {
+  color: #000000;
+  text-decoration: none;
+}
+
+#footer h3 {
+  text-transform: uppercase;
+  font-size: 0.9em;
+}
+
+#footer p {
+  margin: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+    font-size: 11pt;
+    font-weight: 300;
+    color: #FFF;
+
+}
+
+/** OPTICAL SHOP */
+.shopimg {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 250px;
+}
+
+#opticalimg {
+  text-align: center;
+}
+
+/* resize images */
+
+
+.danielle {
+  text-align: center;
+  font-weight: bold;
+}
+
+.brandsimg img{
+  max-width: 100%;
+  height: auto;
+}
+
+/** CONTACT US MAP */
+
+/* Flexible iFrame */
+
+.flexible-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 20px;
+    height: 0;
+    overflow: hidden;
+}
+
+.flexible-container iframe,   
+.flexible-container object,  
+.flexible-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#locations {
+  width: 100%;
+  margin: 0, auto;
+  text-align: center;
+  font-size: 14pt;
+  padding: 1px;
+}
+
+h3 button {
+  background-color: #683115;
+  border-radius: 12px;
+  padding: 11px 20px 10px 20px;
+}
+h3 button a:link {
+  text-decoration: none;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #FFF;
+  font-size: 12pt;
+}
+h3 button a:visited {
+  text-decoration: none;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #FFF;
+  font-size: 12pt;
+}
+h3 button a:hover {
+  text-decoration: none;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #FFF;
+  font-size: 12pt;
+}
+h3 button a:active {
+  text-decoration: none;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #FFF;
+  font-size: 12pt;
+}
+
+/** DOCTORS PAGE */
+
+#doctors {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 12pt;
+}
+
+.moredocs li {
+  padding: 0;
+  margin: 0 auto;
+  list-style-type: none;
+  color: #683115;
+  text-decoration: none;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: bold;
+  width: 700px;
+  line-height: 200%;
+
+}
+/** DOCTORS PAGE AND CONTACT PAGE ADDRESSES */
+
+.box {
+
+    display: inline-block;
+    height: 280px;
+    width: 250px;
+    margin: 5px;
+    overflow: hidden;
+}
+
+.box #lic {
+  font-size: 8pt;
+}
+
+.docinfo {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-weight: 300;
+    color: #683115;
+}
+
+
+/* unvisited link */
+.box a:link {
+    color: #683115;
+    text-decoration: none;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    line-height: 200%;
+    
+}
+
+/* visited link */
+.box a:visited {
+    color: #683115;
+    text-decoration: none;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    line-height: 200%;
+}
+
+/* mouse over link */
+.box a:hover {
+    color: #AD4F2B;
+    text-decoration: none;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    line-height: 200%;
+}
+
+/* selected link */
+
+.box a:active {
+    color: #683115;
+    text-decoration: none;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    line-height: 200%;
+}
+
+/* unvisited link */
+
+p a:link {
+    color: #683115;
+    text-decoration: none;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    line-height: 200%;
+    
+}
+
+/* visited link */
+
+p a:visited {
+    color: #683115;
+    text-decoration: none;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    line-height: 200%;
+}
+
+/* selected link */
+
+p a:active {
+    color: #683115;
+    text-decoration: none;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    line-height: 200%;
+}
+
+/* LASIK PAGE */
+#call {
+  background-color: #EABDAC;
+  border: 2px solid;
+
+}
+
+
+/* MEDICAL TREATMENT PAGE BACKGROUND COLOR AND PARAGRAPH STYLING */
+
+
+.iandi {
+  background-color: #F6DDCC;
+  padding: 4em;
+  float: center;
+  height: auto;
+}
+
+.injuries {
+  background-color: #FBEEE6;
+  padding: 4em;
+  float: center;
+  height: auto;
+}
+
+.children {
+  background-color: #E59866;
+  padding: 4em;
+  float: center;
+  height: auto;
+}
+
+.retinal {
+  background-color: #F6DDCC;
+  padding: 4em;
+  float: center;
+  height: auto;
+}
+
+.glaucoma {
+  background-color: #FBEEE6;
+  padding: 4em;
+  float: center;
+  height: auto;
+}
+
+.laser {
+  background-color: #F6DDCC;
+  padding: 4em;
+  float: center;
+  height: auto;
+}
+
+/* MEDICAL TREATMENT WALL OF TEXT */
+article {
+    -webkit-columns: 3 200px;
+     -moz-columns: 3 200px;
+          columns: 3 200px;
+}
+
+.guide ul li{
+  list-style: none;
+  margin: 0;
+  padding: 1em;
+  font-size: 10px;
+  width: auto;
+  display: inline;
+}
+
+
+
+
+/* unvisited link */
+
+.guide a:link {
+    color: #683115;
+    text-decoration: none;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 14pt;
+    font-weight: bold;
+    line-height: 200%;
+  }
+
+/* visited link */
+
+.guide a:visited {
+    color: #683115;
+    text-decoration: none;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 14pt;
+    font-weight: bold;
+    line-height: 200%;
+
+}
+
+.top a,
+.guide a:hover {
+    color: #AD4F2B;
+    text-decoration: none;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 14pt;
+    font-weight: bold;
+    line-height: 200%;
+
+}
+
+/* selected link */
+
+.guide a:active {
+    color: #683115;
+    text-decoration: none;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 14pt;
+    font-weight: bold;
+    line-height: 200%;
+}
+
+/** FORMS */
+
+.sketch {
+  max-width: 35%;
+  overflow: hidden; 
+  margin-right: 10px; 
+  float: left;
+}
+
+.forms li {
+  list-style-type: none;
+}
+
+/* unvisited link */
+.forms a:link {
+    color: #683115;
+    text-decoration: none;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    line-height: 200%;
+
+    
+}
+
+/* visited link */
+.forms a:visited {
+    color: #683115;
+    text-decoration: none;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    line-height: 200%;
+
+}
+
+/* mouse over link */
+.forms a:hover {
+    color: #AD4F2B;
+    text-decoration: none;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    line-height: 200%;
+
+}
+
+/* selected link */
+.forms a:active {
+    color: #683115;
+    text-decoration: none;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    line-height: 200%;
+}
+
+
+/* CONTACT US PAGE */
+
+/* unvisited link */
+#pdf_directions  a:link {
+    color: #683115;
+    text-decoration: none;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    line-height: 200%;
+
+    
+}
+
+/* visited link */
+#pdf_directions a:visited {
+    color: #683115;
+    text-decoration: none;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    line-height: 200%;
+
+}
+
+/* mouse over link */
+#pdf_directions a:hover {
+    color: #AD4F2B;
+    text-decoration: none;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    line-height: 200%;
+
+}
+
+/* selected link */
+#pdf_directions a:active {
+    color: #683115;
+    text-decoration: none;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    line-height: 200%;
+}
