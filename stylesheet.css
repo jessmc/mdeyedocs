@@ -1,415 +1,225 @@
 html {
-  width: 90%;
   height: 100%;
-  margin-left: 60px;
-  margin-right: 10px;
 }
-
 body {
-  margin: 0;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 0;
+  margin-top: 0;
   padding: 0;
-  background: #AD4F2B;
-  font-family: 'Chivo', sans-serif;
-  font-size: 12pt;
-  font-weight: 300;
-  color: #000000;
+  border: 1px solid #000;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
 }
 
-#page-wrap {
-  width: auto;
-  margin: auto;
+/** NAV BAR */
+
+.header #nav {
+  list-style-type: none;
+  background: #683115;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0;
+  padding: 0; 
 }
 
-
-h1 {
-  font-family: 'Bitter', serif;
-  text-align: center;
+.header #nav .logo {
+  margin-right: auto;
 }
 
-#body {
-  float: center;
-  height: auto;
-  background-color: #FFF;
-  padding: 4em ;
+.header #nav li {
+  padding: 1em;
 }
 
-#body h3 {
-  text-align: center;
-  font-size: 22px;
-  font-family: 'Chivo', sans-serif;
+.header #nav li a {
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+  color: #fff;
+  text-decoration: none;
 }
 
-#body p {
-  font-family: 'Chivo', sans-serif; 
+#nav .dropdown {
+  position: relative;
+  z-index: 1;
 }
 
-
-/** LOGO IMAGE */
-
-.header img {
-  float: left;
-  width: 100%;
-
+#nav .drop-nav {
+  position: absolute;
+  display: none;
+  left: -25px;
 }
+
+#nav .drop-nav li {
+  border-bottom: 1px solid #000;
+  background: #683115;
+  width: 160px;
+  list-style-type: none;
+}
+
+#nav .drop-nav li a {
+  font-size: 10pt;
+}
+
+#nav .drop-nav li:hover {
+  background-color: #AD4F2B;
+}
+
+#nav .dropdown:hover > .drop-nav {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .header #nav {
+    flex-direction: column;
+    text-align: center;
+    font-size: 10pt;
+  }
+  #nav .dropdown:hover > .drop-nav{
+    display: none;
+  }
+  .header #nav .logo {
+    margin-right: 0;
+  }
+}
+
+/* end nav bar */
 
 /** BIG EYEBALL PICTURE */
-
-.row {  
-  background-color: #683115;
-  color: #FFF;
-  font-family: 'Bitter', sans-serif;
-  text-decoration: none;
-  font-size: 16pt;
-  font-weight: 500;
-  text-align: center;
-}
-
-
-.row img {  
-  overflow:hidden;
-  float: left;
-  width: 100%;
-
-}
-
-.rowbox {
-  display: inline-block;
-    height: auto;
-    width: auto;
-    overflow: hidden;
-}
-
-
-.row a {
-  text-decoration: none;
-  font-family: 'Bitter', sans-serif;
-  font-size: 16pt;
-  font-weight: 500;
-  color: #AD4F2B;
-}
-
-/** MENU BAR */
-
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:700);
-#menu {
-  width: 100%;
-  height: 40px;
-}
-
-ul#nav {
-  float: left;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  background: #683115 repeat-x;
- 
-}
-
-ul#nav li {
-  display: block;
-}
-
-ul#nav li a {
-  float: left;
-  font-family: 'Open Sans', sans-serif;
-  text-transform: uppercase;
-  font-weight: 700;
-  line-height: 40px;
-  color: #fff;
-  text-decoration: none;
-  margin: 0;
-  padding: 0 20px;
-  background: #683115 repeat-x;
-  
-}
-
-/* APPLIES THE ACTIVE STATE */
-ul#nav .active-has-sub a, ul#nav li:hover > a  {
-  color: #fff;
-  text-decoration: none;
-  background: #AD4F2B;
-
-}
-
-
-/* THE SUBMENU LIST HIDDEN BY DEFAULT */
-ul#nav  ul {
-  display: none;
-  position:absolute; top:100%; left:0;
-}
-
-
-
-/* ALIGNED THE SUBMENU CORRECTLY */
-#menu > ul > li {
-  display: block;
+.jumbo-img {
   position: relative;
-  float: left;
-  margin: 0;
-  padding: 0;
-
 }
 
+.jumbo-img img{
+ width: 100%;
+ height: auto;
+ opacity: 0.7;
+}
 
-
-/* WHEN THE FIRST LEVEL MENU ITEM IS HOVERED, THE CHILD MENU APPEARS */
-ul#nav li:hover > ul {
+.jumbo-img .centered {
   position: absolute;
-  display: block;
-  text-transform: uppercase;
-  width: 200px;
-  background: #683115 repeat-x; 
+  top: 50%;
+  left: 0;
+  text-align: center;
+  width: 100%;
+}
+
+.jumbo-img h1 {
   font-family: 'Open Sans', sans-serif;
   text-transform: uppercase;
-  font-weight: 700;
-  float: left;
-
+  font-size: 18pt;
+  color: #000;
 }
 
-ul#nav li:hover > ul li a {
-  background: #683115;
-  border-bottom: 1px dotted #AD4F2B;
-  font-size: 16px;
-  line-height: 100%;
-  margin-left: -2em;
-  padding: 10px 0px;
-  color: #ffffff;
-
+.jumbo-img button {
+  padding: 1em;
+  border-radius: 20px;
+  background-color: #683115;
 }
-
-
-ul#nav li:hover > ul li a:hover {
-  color: #AD4F2B;
+.jumbo-img button a {
+  font-size: 16pt;
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
   text-decoration: none;
-  text-shadow: none;
+  color: #FFF;
+} 
+
+
+/* Media query for jumbo eye pic */
+@media (max-width: 768px) {
+  .jumbo-img h1 {
+    font-size: 12pt;
+  }
+  .jumbo-img button a{
+    font-size: 8pt;
+  }
 }
+/* End media query */
 
-#menu ul ul li.last > a,
-#menu ul ul li:last-child > a,
-#menu ul ul ul li.last > a,
-#menu ul ul ul li:last-child > a,
-#menu .has-sub ul li:last-child > a,
-#menu .has-sub ul li.last > a {
-  border-bottom: 0;
-}
-
-@media screen and (max-width: 900px) {
-  #menu ul li {
-    float: none;
-    display: block;
-  }
-  #menu ul li a {
-    width: 100%;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    border-bottom: 1px solid #AD4F2B;
-
-  }
-  #menu ul li.last > a,
-  #menu ul li:last-child > a {
-    border: 0;
-  }
-  #menu ul li a:after {
-    display: none;
-
-  }
-  #menu ul li a:before {
-    display: none;
-  }
-  #menu .has-sub li {
-    display: none;
-  }
-
-}
+/* end jumbo eye picture */
 
 
 /** FOOTER */
 
 #footer {
-  width: 80%;
-  margin: 0px auto; /* centers it */
+  flex: 1;
+  background-color: #AD4F2B;
+}
+#footer h1 {
+  padding-left: 2em;
+  font-size: 14pt;
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+}
+
+#footer .locations ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#footer li {
+  list-style-type: none;
+  padding: 1em;
+}
+
+#footer li h2 {
+  font-size: 12pt;
   padding: 0;
-  min-width: 400px;
-}
-
-.copyright {
-  text-align: center;
-  margin: auto;
-}
-
-
-/* HOME PAGE FOOTER */
-
-
-
-#index_locations h2 {
-  text-align: center;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
   text-transform: uppercase;
-  font-size: 1.4em;
+}
+#footer li p {
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+#footer .locations .buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 0;
+}
+
+#footer .locations .buttons li{
+  padding: 5px;
+  margin: 0;
+}
+
+#footer .locations .buttons button {
+  background-color: #683115;
+  border-radius: 5px;
+}
+#footer .locations .buttons button a{ 
   color: #FFF;
   text-decoration: none;
-  letter-spacing: 1px;
-  display: block;
-  font-weight: 300;
-  padding-top: 20px;
- 
-}
-
-#index_locations.row1 {
-  display: inline-block;
-    margin: 0px;
-    overflow: hidden;
-      text-align: center;
-         
-}
-
-#index_locations .row2 {
-  display: inline-block;
-    margin: 0px;
-    overflow: hidden;
-      text-align: center;
-         
-}
-
-#indexlocations .row3 {
-  display: inline-block;
-    margin: 0px;
-    overflow: hidden;
-      text-align: center;
-         
-
-}
-#index_locations h3 {
+  font-size: 14pt;
+  font-family: 'Open Sans', sans-serif;
   text-transform: uppercase;
-  font-size: 0.9em;
-    text-align: center;
-       
+}
+/* Media query for footer */
+@media (max-width: 768px) {
+  #footer .locations .buttons button a {
+    font-size: 12pt;
+  }
+}
+/* end media query */
+
+/* end footer */
+
+/* Content section */
+
+#content {
+  padding: 3em;
 }
 
-
-#index_locations a:link {
-  text-decoration: none;
-  color: #FFFFFF;
+#content p {
+  font-family: 'Roboto', sans-serif;
 }
 
-#index_locations a:visited {
-  text-decoration: none;
-  color: #000000;
-}
-
-#index_locations a:hover {
-  color: #683115;
-  text-decoration: none;
-}
-
-#index_locations a:active {
-  color: #000000;
-  text-decoration: none;
-}
-
-#index_locations h3 {
-  text-transform: uppercase;
-  font-size: 0.9em;
-    text-align: center;
-       
-}
-
-#index_locations p {
-  margin: 0;
-  font-family: 'Source Sans Pro', sans-serif;
-    font-size: 11pt;
-    font-weight: 300;
-    color: #FFF;
-      text-align: center;
-         
-
-}
-
-/** right footer */
-
-
-#footer h2 {
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 1.4em;
-  color: #FFF;
-  text-decoration: none;
-  letter-spacing: 1px;
-  display: block;
-  font-weight: 300;
-     
-}
-
-.row1 {
-  display: inline-block;
-    height: 200px;
-    width: 220px;
-    margin: 0px;
-    overflow: hidden;
-       
-}
-
-.row2 {
-  display: inline-block;
-    height: 200px;
-    width: 220px;
-    margin: 0px;
-    overflow: hidden;
-       
-}
-
-.row3 {
-  display: inline-block;
-    height: 200px;
-    width: 220px;
-    margin: 0px;
-    overflow: hidden;
-       
-
-}
-
-#footer h3 {
-  text-transform: uppercase;
-  font-size: 0.9em;
-
-}
-
-
-#footer a:link {
-  text-decoration: none;
-  color: #FFFFFF;
-}
-
-#footer a:visited {
-  text-decoration: none;
-  color: #000000;
-}
-
-#footer a:hover {
-  color: #683115;
-  text-decoration: none;
-}
-
-#footer a:active {
-  color: #000000;
-  text-decoration: none;
-}
-
-#footer h3 {
-  text-transform: uppercase;
-  font-size: 0.9em;
-}
-
-#footer p {
-  margin: 0;
-  font-family: 'Source Sans Pro', sans-serif;
-    font-size: 11pt;
-    font-weight: 300;
-    color: #FFF;
-
-}
 
 /** OPTICAL SHOP */
 .shopimg {
