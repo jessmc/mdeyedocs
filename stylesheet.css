@@ -251,22 +251,17 @@ body {
 
 
 /** OPTICAL SHOP */
-.shopimg {
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    height: 250px;
+
+#opticalimg img {
+  max-width: 45%;
+  height: auto;
+  padding: 1em;
 }
 
-#opticalimg {
-  text-align: center;
-}
-
-/* resize images */
-
-.danielle {
+.danielle p{
   text-align: center;
   font-weight: bold;
+  margin: 0;
 }
 
 .brandsimg img{
