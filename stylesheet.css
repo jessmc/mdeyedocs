@@ -225,6 +225,16 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
+#content h2 {
+  font-size: 14pt;
+  font-family: 'Roboto', sans-serif;
+}
+
+#content h4 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16pt;
+}
+
 /* Maps on index page */
 #content .maps {
   display: flex;
@@ -254,7 +264,6 @@ body {
 
 /* resize images */
 
-
 .danielle {
   text-align: center;
   font-weight: bold;
@@ -265,65 +274,6 @@ body {
   height: auto;
 }
 
-/** CONTACT US MAP */
-
-/* Flexible iFrame */
-
-.flexible-container {
-    position: relative;
-    padding-bottom: 56.25%;
-    padding-top: 20px;
-    height: 0;
-    overflow: hidden;
-}
-
-.flexible-container iframe,   
-.flexible-container object,  
-.flexible-container embed {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
-#locations {
-  width: 100%;
-  margin: 0, auto;
-  text-align: center;
-  font-size: 14pt;
-  padding: 1px;
-}
-
-h3 button {
-  background-color: #683115;
-  border-radius: 12px;
-  padding: 11px 20px 10px 20px;
-}
-h3 button a:link {
-  text-decoration: none;
-  font-family: 'Source Sans Pro', sans-serif;
-  color: #FFF;
-  font-size: 12pt;
-}
-h3 button a:visited {
-  text-decoration: none;
-  font-family: 'Source Sans Pro', sans-serif;
-  color: #FFF;
-  font-size: 12pt;
-}
-h3 button a:hover {
-  text-decoration: none;
-  font-family: 'Source Sans Pro', sans-serif;
-  color: #FFF;
-  font-size: 12pt;
-}
-h3 button a:active {
-  text-decoration: none;
-  font-family: 'Source Sans Pro', sans-serif;
-  color: #FFF;
-  font-size: 12pt;
-}
 
 /** DOCTORS PAGE */
 
@@ -338,7 +288,6 @@ h3 button a:active {
 .doctors li {
   list-style-type: none;
   padding: 3em;
-
 }
 
 .doctors a {
@@ -352,6 +301,7 @@ h3 button a:active {
   display: flex;
   flex-direction: column;
 }
+
 .moredocs li {
   flex: 1;
   padding: 0.5em;
@@ -370,12 +320,9 @@ h3 button a:active {
 #call {
   background-color: #EABDAC;
   border: 2px solid;
-
 }
 
-
 /* MEDICAL TREATMENT PAGE BACKGROUND COLOR AND PARAGRAPH STYLING */
-
 
 .iandi {
   background-color: #F6DDCC;
@@ -421,7 +368,7 @@ h3 button a:active {
 
 /* MEDICAL TREATMENT WALL OF TEXT */
 article {
-    -webkit-columns: 3 200px;
+  -webkit-columns: 3 200px;
      -moz-columns: 3 200px;
           columns: 3 200px;
 }
@@ -435,11 +382,7 @@ article {
   display: inline;
 }
 
-
-
-
 /* unvisited link */
-
 .guide a:link {
     color: #683115;
     text-decoration: none;
@@ -447,10 +390,8 @@ article {
     font-size: 14pt;
     font-weight: bold;
     line-height: 200%;
-  }
-
+}
 /* visited link */
-
 .guide a:visited {
     color: #683115;
     text-decoration: none;
@@ -458,9 +399,7 @@ article {
     font-size: 14pt;
     font-weight: bold;
     line-height: 200%;
-
 }
-
 .top a,
 .guide a:hover {
     color: #AD4F2B;
@@ -469,11 +408,8 @@ article {
     font-size: 14pt;
     font-weight: bold;
     line-height: 200%;
-
 }
-
 /* selected link */
-
 .guide a:active {
     color: #683115;
     text-decoration: none;
@@ -507,10 +443,7 @@ article {
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: bold;
     line-height: 200%;
-
-    
 }
-
 /* visited link */
 .forms a:visited {
     color: #683115;
@@ -518,9 +451,7 @@ article {
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: bold;
     line-height: 200%;
-
 }
-
 /* mouse over link */
 .forms a:hover {
     color: #AD4F2B;
@@ -528,54 +459,9 @@ article {
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: bold;
     line-height: 200%;
-
 }
-
 /* selected link */
 .forms a:active {
-    color: #683115;
-    text-decoration: none;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: bold;
-    line-height: 200%;
-}
-
-
-/* CONTACT US PAGE */
-
-/* unvisited link */
-#pdf_directions  a:link {
-    color: #683115;
-    text-decoration: none;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: bold;
-    line-height: 200%;
-
-    
-}
-
-/* visited link */
-#pdf_directions a:visited {
-    color: #683115;
-    text-decoration: none;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: bold;
-    line-height: 200%;
-
-}
-
-/* mouse over link */
-#pdf_directions a:hover {
-    color: #AD4F2B;
-    text-decoration: none;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: bold;
-    line-height: 200%;
-
-}
-
-/* selected link */
-#pdf_directions a:active {
     color: #683115;
     text-decoration: none;
     font-family: 'Source Sans Pro', sans-serif;
