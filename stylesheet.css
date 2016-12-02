@@ -485,13 +485,17 @@ article {
 
 /** FORMS */
 
-.sketch {
-  max-width: 35%;
+.shopimg {
   overflow: hidden; 
   margin-right: 10px; 
   float: left;
+  max-width: 45%;
+  height: auto;
 }
 
+.forms {
+  padding: 0;
+}
 .forms li {
   list-style-type: none;
 }
