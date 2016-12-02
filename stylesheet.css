@@ -282,10 +282,10 @@ body {
 
 .doctors li {
   list-style-type: none;
-  padding: 3em;
+  margin: 1em;
 }
 
-.doctors a {
+.doctors li a {
   text-decoration: none;
   font-family: 'Source Sans Pro', sans-serif;
   color: #683115;
