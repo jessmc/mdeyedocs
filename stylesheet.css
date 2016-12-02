@@ -489,3 +489,9 @@ article {
     font-weight: bold;
     line-height: 200%;
 }
+
+.man-eye-img img{
+  float: right;
+  width: 50%;
+  height: auto;
+}
