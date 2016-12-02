@@ -220,6 +220,25 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+#content h1 {
+  font-size: 18pt;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Maps on index page */
+#content .maps {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 0;
+}
+
+#content .maps li {
+  align-self: center;
+  list-style-type: none;
+  padding: 1em;
+}
+
 
 /** OPTICAL SHOP */
 .shopimg {
@@ -308,24 +327,40 @@ h3 button a:active {
 
 /** DOCTORS PAGE */
 
-#doctors {
-    width: 100%;
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: center;
-    font-size: 12pt;
+#content .doctors {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 0;
 }
 
-.moredocs li {
-  padding: 0;
-  margin: 0 auto;
+.doctors li {
   list-style-type: none;
-  color: #683115;
+  padding: 3em;
+
+}
+
+.doctors a {
   text-decoration: none;
   font-family: 'Source Sans Pro', sans-serif;
+  color: #683115;
+  text-align: center;
+
+}
+
+.moredocs ul{
+  display: flex;
+  flex-direction: column;
+}
+.moredocs li {
+  flex: 1;
+  padding: 0.5em;
+  list-style-type: none;
+  color: #683115;
+  font-family: 'Roboto', sans-serif;
   font-weight: bold;
-  width: 700px;
-  line-height: 200%;
+  
 
 }
 /** DOCTORS PAGE AND CONTACT PAGE ADDRESSES */
