@@ -294,7 +294,7 @@ body {
 
 .doctors li a {
   text-decoration: none;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   color: #683115;
   text-align: center;
 }
@@ -322,6 +322,7 @@ body {
 #call {
   background-color: #EABDAC;
   border: 2px solid;
+  text-align: center;
 }
 
 /* MEDICAL TREATMENT PAGE BACKGROUND COLOR AND PARAGRAPH STYLING */
@@ -375,7 +376,18 @@ article {
           columns: 3 200px;
 }
 
-.guide ul li{
+.guide  {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 0;
+}
+@media (max-width: 678px) {
+  .guide {
+    flex-direction: column;
+  }
+}
+.guide li{
   list-style: none;
   margin: 0;
   padding: 1em;
@@ -383,39 +395,46 @@ article {
   width: auto;
   display: inline;
 }
+.guide a {
+  color: #683115;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14pt;
+    font-weight: bold;
+}
 
 /* unvisited link */
-.guide a:link {
+.back-to-top a:link {
     color: #683115;
     text-decoration: none;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 14pt;
     font-weight: bold;
     line-height: 200%;
 }
 /* visited link */
-.guide a:visited {
+.back-to-top a:visited {
     color: #683115;
     text-decoration: none;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 14pt;
     font-weight: bold;
     line-height: 200%;
 }
 .top a,
-.guide a:hover {
+.back-to-top a:hover {
     color: #AD4F2B;
     text-decoration: none;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 14pt;
     font-weight: bold;
     line-height: 200%;
 }
 /* selected link */
-.guide a:active {
+.back-to-top a:active {
     color: #683115;
     text-decoration: none;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 14pt;
     font-weight: bold;
     line-height: 200%;
@@ -442,7 +461,7 @@ article {
 .forms a:link {
     color: #683115;
     text-decoration: none;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: bold;
     line-height: 200%;
 }
@@ -450,7 +469,7 @@ article {
 .forms a:visited {
     color: #683115;
     text-decoration: none;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: bold;
     line-height: 200%;
 }
@@ -458,7 +477,7 @@ article {
 .forms a:hover {
     color: #AD4F2B;
     text-decoration: none;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: bold;
     line-height: 200%;
 }
@@ -466,7 +485,7 @@ article {
 .forms a:active {
     color: #683115;
     text-decoration: none;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: bold;
     line-height: 200%;
 }
