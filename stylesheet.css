@@ -346,7 +346,6 @@ h3 button a:active {
   font-family: 'Source Sans Pro', sans-serif;
   color: #683115;
   text-align: center;
-
 }
 
 .moredocs ul{
@@ -360,101 +359,12 @@ h3 button a:active {
   color: #683115;
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
-  
-
-}
-/** DOCTORS PAGE AND CONTACT PAGE ADDRESSES */
-
-.box {
-
-    display: inline-block;
-    height: 280px;
-    width: 250px;
-    margin: 5px;
-    overflow: hidden;
 }
 
-.box #lic {
-  font-size: 8pt;
+.doc-img {
+  padding: 1em;
 }
 
-.docinfo {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    font-weight: 300;
-    color: #683115;
-}
-
-
-/* unvisited link */
-.box a:link {
-    color: #683115;
-    text-decoration: none;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: bold;
-    line-height: 200%;
-    
-}
-
-/* visited link */
-.box a:visited {
-    color: #683115;
-    text-decoration: none;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: bold;
-    line-height: 200%;
-}
-
-/* mouse over link */
-.box a:hover {
-    color: #AD4F2B;
-    text-decoration: none;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: bold;
-    line-height: 200%;
-}
-
-/* selected link */
-
-.box a:active {
-    color: #683115;
-    text-decoration: none;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: bold;
-    line-height: 200%;
-}
-
-/* unvisited link */
-
-p a:link {
-    color: #683115;
-    text-decoration: none;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: bold;
-    line-height: 200%;
-    
-}
-
-/* visited link */
-
-p a:visited {
-    color: #683115;
-    text-decoration: none;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: bold;
-    line-height: 200%;
-}
-
-/* selected link */
-
-p a:active {
-    color: #683115;
-    text-decoration: none;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: bold;
-    line-height: 200%;
-}
 
 /* LASIK PAGE */
 #call {
